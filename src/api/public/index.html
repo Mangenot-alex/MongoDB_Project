@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mongo project</title>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+
+<body>
+  <h1>Les points d'intèrêts à Nancy</h1>
+
+  <div id="div_map_legend">
+    <ul id="ul_legend">
+      <li><img src="./assets/location_client.svg" height="30px" width="30px" /></li>
+      <li>Votre position</li>
+      <li><img src="./assets/bike.svg" height="30px" width="30px" /></li>
+      <li>Stations vélib</li>
+      <li><img src="./assets/location_parking.svg" height="30px" width="30px" /></li>
+      <li>Parking Véhicules</li>
+    </ul>
+
+
+    <div id="div_map">
+    </div>
+  </div>
+
+  <div id="div_info_page">
+
+    <h3>base de données</h3>
+    <a href="http://localhost:8795/parking/all">Liste des parkings</a> <br>
+    <a href="http://localhost:8795/velos/all">Liste des vélos</a>
+
+    <h3>Les API utilisés</h3>
+    <a href="https://api.mapbox.com/styles/v1/">La map</a> <br>
+    <a href="http://ip-api.com/json/?lang=fr">Géolocalisation IP</a> <br>
+    <a href="https://transport.data.gouv.fr/gbfs/nancy/station_information.json">Stations Vélib</a> <br>
+    <a href="https://geoservices.grand-nancy.org/arcgis/rest/services/public/VOIRIE_Parking/MapServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=nom%2Cadresse%2Cplaces%2Ccapacite&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&queryByDistance=&returnExtentsOnly=false&datumTransformation=&parameterValues=&rangeValues=&f=pjson">Géoservices Parking Nancy</a>
+
+  </div>
+
+
+  <footer>
+    Mangenot Alex <br>
+    Licence Proffessionel Conception-Intégration d’Applications et Services Web pour l’Entreprise (CIASIE) <br>
+    IUT Charlemagne
+  </footer>
+
+</body>
+<script src="./js/map.js"></script>
+
+
+</html>

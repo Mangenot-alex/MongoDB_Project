@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#div_map_legend {
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+}
+
+#ul_legend {
+  width: 20vw;
+  height: 80vh;
+  padding-top: 20vh;
+  list-style: none;
+}
+
+#div_map {
+  height: 80vh;
+  width: 70vw;
+  padding: 2%;
+}
+
+h1{
+  text-align: center;
+  margin: 10px;
+  border: solid 1px;
+  background-color: lightgreen;
+  border-radius: 5px;
+  height: calc(20vh-20px);
+}
+
+#div_info_page, footer{
+  display: block;
+  margin: 0 0 40px 0;
+  width: 100%;
+  text-align: center;
+}
+
+#div_info_page {
+  margin-top: 30vh;
+}
+
+a, h3 {
+  width: 100vw;
+}
